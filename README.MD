@@ -26,6 +26,16 @@ export class ExampleUsage {
 
 ```
 
+### Background
+
+The goal of this package is to estimate the complexity of a target codebade. "Complexity" refers to [Cyclomatic Complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity), "a quantitative measure of the number of linearly independent paths through a program's source code."
+
+This is implemented by summing over the weights (defined in `MetricsConfiguration.ts`) assigned to tokens in the target codebase.
+
+### Target Languages
+
+Currently, TSMetrics supports complexity analysis of TypeScript files (including JavScript)(I don't know if this is true, of if this actually supports any properly formatted AST)
+
 ### License
 
 Licensed under MIT
